@@ -1,0 +1,754 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0%;
+}
+
+a, li, button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 1000;
+    font-size: 12px;
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+
+button.login {
+    padding: 1em 2em;
+    border: 0px;
+    background-color: transparent;
+}
+
+
+button.login:hover {
+    padding: 1em 2em;
+    border: 0px;
+    background-color: transparent;
+    color: green;
+    cursor: pointer;
+}
+button.signup {
+    padding: 1em 2em;
+    border: 0px;
+    background-color: rgb(0, 185, 0);
+    color: white;
+    border-radius: 5px;
+}
+
+
+button.signup:hover {
+    padding: 1em 2em;
+    border: 0px;
+    background-color: rgb(0, 89, 0);
+    cursor: pointer;
+    transition: 1s;
+    border-radius: 5px;
+}
+
+/* header start */
+header.main {
+    display: flex;
+    justify-content: flex-start;
+    background-color: white;
+    height: 80px;
+}
+
+
+header.main > * {
+    margin-top: 0.5em;
+}
+
+
+/* logo start */
+header.main .logo {
+    margin-left: 7em;
+    display: flex;
+    height: 40px;
+    margin-top: 20px;
+}
+
+/* Logo end */
+
+/* navigation pages start */
+
+
+nav.pages ul{
+    display: flex;
+    flex-flow: row;
+justify-content: space-around;
+}
+
+nav.pages li {
+    padding: 0.5em 1em;
+    justify-content: flex-start;
+}
+
+nav.pages li a:hover {
+    color: rgb(0, 188, 0);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+
+/* navigation pages end */
+
+/* login start */
+
+nav.login {
+    margin-left: auto;
+    margin-right: 7em;
+    margin-top: 0px;
+    align-self: center;
+}
+
+nav.login ul {
+    display: flex;
+}
+
+nav.login li {
+    padding: 0.5em 0em;
+}
+
+
+
+/* header end */
+
+/* main section start */
+
+section.main_section {
+    display: flex;
+    height: 85vh;
+    color: white;
+    background-image: url("../img/img1.jpg");
+    background-size: cover;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+section.main_section div {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 45vw;
+
+}
+
+section.main_section h1 {
+    font-size: 4em;
+    margin: auto;
+    padding: 10px;
+}
+
+p {
+    font-size: 2em;
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+}
+
+section.main_section ul {
+    display: flex;
+    justify-content: center;
+}
+
+section.main_section li {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+/* note2: these buttons have different weight and when you change
+the width of the page the text comes out of the button borders */
+
+section.main_section button.button_one {
+    padding: 1em 2em;
+    font-size: 16px;
+    color: white;
+    border-radius: 7px;
+    border: none;
+    background-color: rgb(0, 185, 0);
+    margin-top: 2em;
+}
+
+section.main_section button.button_two {
+    padding: 1em 2em;
+    font-size: 16px;
+    color: white;
+    border-radius: 7px;
+    border: 1px solid white;
+    background-color: transparent;
+    margin-top: 2em;
+}
+
+section.main_section button.button_one:hover {
+    background-color: rgb(0, 68, 0);
+    cursor: pointer;
+    transition: 1s;
+
+}
+
+section.main_section button.button_two:hover {
+    background-color: white;
+    color: green;
+    transition: 1s;
+    cursor: pointer;
+ 
+
+
+}
+
+
+
+/* main section end */
+
+/* second section start */
+
+section.second_section {
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    /* flex-wrap: wrap; */
+}
+
+section.second_section h1.main {
+    font-size: 2.5em;
+    width: 45vw;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+
+section.second_section p.main {
+    font-size: 1.5em;
+    color: grey;
+    width: 45vw;
+    margin-top: 0px;
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+div.article_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 10vw;
+}
+
+div.article_container div.image_container img{
+    width: 30px;
+}
+
+div.article_container h1.secondary {
+    font-size: 1.2em;
+    /* note1: font size bigger than this fucks up all the page */
+    margin-bottom: 1em;
+    margin-right: 1em;
+    text-align: center;
+}
+
+div.article_container p.secondary {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+    margin-right: 1em;
+    text-align: left;
+}
+
+div.article_container a {
+    font-size: 1em;
+    color: green;
+    margin-bottom: 1em;
+    margin-right: 1em;
+    text-align: left;
+}
+
+/* second section end */
+
+/* third section start */
+
+section.third_section {
+    background-color: rgba(128, 128, 128, 0.214);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3em;
+    text-align: center;
+}
+
+section.third_section article:first-child {
+    flex-basis: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-around;
+    padding: 3em;
+    /* flex: 1 30vw; */
+}
+
+section.third_section article:first-child h1 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+    text-align: left;
+}
+
+section.third_section article:first-child p {
+    font-size: 1.2em;
+    padding: 0em;
+    text-align: left;
+}
+
+section.third_section article:first-child a{
+    text-align: left;
+    color: green;
+    margin-top: 1em;
+    font-size: 1.2em;
+    font-weight: 100;
+}
+
+section.third_section article:last-child {
+    flex-basis: 50vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* flex: 1 30vw; */
+}
+
+section.third_section article:last-child div {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+section.third_section article:last-child div:nth-child(1){
+   background-image: url("../img/bckgrnd1.jpg");
+   background-size: cover;
+   background-position: bottom;
+}
+
+section.third_section article:last-child div:nth-child(2){
+    background-image: url("../img/bckgrnd2.jpg");
+    background-size: cover;
+    background-position: bottom;
+ }
+
+ section.third_section article:last-child div:nth-child(3){
+    background-image: url("../img/bckgrnd3.jpg");
+    background-size: cover;
+    background-position: bottom;
+ }
+
+ section.third_section article:last-child div:nth-child(4){
+    background-image: url("../img/bckgrnd4.jpg");
+    background-size: cover;
+    background-position: bottom;
+ }
+
+section.third_section article:last-child h1 {
+    background-color: rgba(0, 0, 0, 0.523);
+    text-align: center;
+    padding: 0.5em 1em;
+    margin-bottom: 0%;
+    color: white;
+    font-size: 1.5em;
+}
+
+
+section.third_section article:last-child div:nth-child(1), section.third_section article:last-child div:nth-child(2) {
+width: 250px;
+height: 250px;
+margin: 1em;
+}
+
+section.third_section article:last-child div:nth-child(3), section.third_section article:last-child div:nth-child(4) {
+    width: 250px;
+    height: 250px;
+    margin: 1em;
+}
+
+
+
+/* third section end */
+
+
+/* fourth section start */
+
+section.fourth_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2em;
+}
+
+section.fourth_section > h1 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+section.fourth_section > p {
+    font-size: 1.5em;
+    margin-bottom: 2em;
+
+}
+
+section.fourth_section article {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 80vw;
+    margin-bottom: 2em;
+}
+
+section.fourth_section article .button_div {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    width: 280px;
+    height: 180px;
+    padding: 1em;
+    border: 1px solid rgba(128, 128, 128, 0.125);
+    padding: 0%;
+    background-color: rgba(128, 128, 128, 0.045);
+}
+
+section.fourth_section article .button_div:hover {
+    box-marow: 0px 2px 5px rgba(0, 0, 0, 0.49);
+    transition:0.5s;
+}
+
+
+section.fourth_section article .button_div img {
+    width: 50px;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+section.fourth_section article .button_div h1 {
+    background-color: rgba(0, 0, 0, 0.147);
+    margin-bottom: 0%;
+    width: 100%;
+    text-align: center;
+    line-height: 2em;
+    
+}
+
+section.fourth_section a {
+    color: green;
+    font-size: 1em;
+}
+
+/* fourth section end */
+
+/* fifth section start */
+
+section.fifth_section {
+    padding: 4em 2em;
+    display: flex;
+    display-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(128, 128, 128, 0.127);
+}
+
+section.fifth_section div:nth-child(1) {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+    text-align: center;
+    height: 400px;
+}
+
+section.fifth_section div:nth-child(1) iframe {
+    width: 90%;
+    height: 90%;
+}
+
+
+section.fifth_section div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: start;
+    width: 50%;
+    padding: 0 2em;
+    margin-top: 0%;
+}
+
+section.fifth_section div:nth-child(2) h1 {
+    font-size: 3em;
+    text-align: left;
+    margin-top: 0%;
+}
+
+section.fifth_section div:nth-child(2) p {
+    font-size: 1.2em;
+    text-align: left;
+}
+
+section.fifth_section div:nth-child(2) ul li {
+    font-size: 1em;
+    font-weight: 300;
+    }
+
+section.fifth_section div:nth-child(2) ul li:before {
+    content: '✓ ';
+}
+
+section.fifth_section div:nth-child(2) button {
+    margin-top: 1em;
+    padding: 1em;
+    font-size: 1em;
+    border: 1px solid green;
+    background-color: transparent;
+    color: green;
+    border-radius: 5px;
+}
+
+section.fifth_section div:nth-child(2) button:hover {
+    background-color: green;
+    color: white;
+    transition: 0.5s;
+}
+
+
+
+
+/* fifth section end */
+
+/* sixth section start */
+
+section.sixth_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 4em;
+}
+
+section.sixth_section h1 {
+   font-size: 3em;
+   margin-bottom: 0%;
+}
+
+section.sixth_section p {
+    font-size: 2em;
+    margin: 0.2em;
+    color: grey;
+}
+
+section.sixth_section a {
+        color: green;
+        font-size: 1.2em;
+}
+
+section.sixth_section > article {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+section.sixth_section > article div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 2em;
+}
+
+section.sixth_section > article div > * {
+   margin: 0.5em;
+}
+
+section.sixth_section > article div p {
+    font-size: 1.4em;
+}
+
+section.sixth_section > article div h5:nth-of-type(1) {
+    font-size: 1em;
+}
+section.sixth_section > article div h5:nth-of-type(2) {
+    font-size: 1em;
+    color: grey;
+}
+
+section.sixth_section img {
+    width: 50px;
+    opacity: 0.3;
+}
+
+/* sixth section end */
+
+/* seventh section start */
+section.seventh_section {
+   
+    background: url("../img/bckgrnd1.jpg"); 
+    background-position: center;
+    background-size: cover;
+    opacity: 0.8;
+    height: 30vw;
+}
+
+section.seventh_section > div {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 128, 0, 0.674);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4em;
+
+}
+
+section.seventh_section h1 {
+    font-size: 2em;
+    color: white;
+    margin-bottom: 0.5em;
+}
+
+section.seventh_section p {
+    color: white;
+    font-size: 1.3em;
+    margin-top: 0px;
+    margin-bottom: 0.5em;
+}
+
+section.seventh_section button {
+    padding: 1em 2em;
+    color: green;
+    margin-top: 2em;
+    font-size: 1em;
+    border-radius: 5px;
+    border: none;
+}
+
+section.seventh_section button:hover {
+    box-marow: 0px 3px 10px rgb(0, 0, 0);
+    transition: 0.5s;
+
+}
+
+
+
+/* seventh section end */
+
+/* last section start */
+
+section.last_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(128, 128, 128, 0.104);
+    padding-bottom: 3em;
+}
+
+section.last_section h1 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+section.last_section p {
+    font-size: 1.2em;
+    color: grey;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+section.last_section article {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+section.last_section img {
+    padding: 0 1em;
+}
+/* last section end */
+
+/* footer start */
+
+footer {
+    margin: 10vh 0;
+    display: flex;
+    flex-direction: column;
+}
+
+footer section:nth-of-type(1) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10%;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.314);
+}
+
+footer section:nth-of-type(1) ul:nth-of-type(1) {
+    padding: 0%;
+    /* margin-left: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around; */
+    
+}
+
+
+footer section:nth-of-type(1) li {
+    display: inline-flex;
+    padding: 0 10px;
+    margin: 0%;
+    font-size: 16px;
+    /* note3: font size doesn't change, why> */
+}
+
+.fa {
+
+    font-size: 32px;
+    padding: 0 10px;
+
+    /* note3: font size doesn't change, why> */
+
+}
+
+
+footer section:nth-of-type(2) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10%;
+}
+
+footer section:nth-of-type(2) p {
+    font-size: 1em;
+    text-align: left;
+    padding: 0 10px;
+    margin: 0%;
+}
+
+footer section:nth-of-type(2) li {
+    display: inline-flex;
+    padding: 0 10px;
+
+}
+
+footer p a {
+    color: green;
+}
+/* footer end */
